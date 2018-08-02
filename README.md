@@ -28,6 +28,12 @@ Assuming a `secrets` folder is in the current directory
 
     $ docker run --rm -p 3000:3000 --interactive --tty --volume "$PWD/secrets":/secrets akvo/flow-api-backend
 
+### Development environment
+
+To start:
+
+    $ docker-compose up --build -d && docker-compose logs -f --tail=10
+
 
 ### Test
 
